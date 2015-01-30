@@ -13,6 +13,7 @@ def setup(app):
     """
     app.add_role('map', mapping_role)
     app.add_config_value('xref_mapping_dict', None, 'env')
+    return {'parallel_read_safe': True}
 
 
 def mapping_role(name, rawtext, text, lineno, inliner,
