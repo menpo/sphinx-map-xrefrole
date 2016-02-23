@@ -3,7 +3,7 @@
 from setuptools import setup
 
 setup(name='sphinxmapxrefrole',
-      version='0.2.1',
+      version='0.2.2',
       description='Sphinx mapping role',
       author='Patrick Snape',
       author_email='patricksnape@gmail.com',

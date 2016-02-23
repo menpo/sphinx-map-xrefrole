@@ -37,13 +37,13 @@ def mapping_role(name, rawtext, text, lineno, inliner,
                 '[sphinxmapxrefrole] - Unsupported directive {} for {}'.format(
                     role_type, text),
                 line=lineno)
-            prb = inliner.problematic(rawtext, rawtext, msg)
+            prb = inliner.problematic(text, rawtext, msg)
             return [prb], [msg]
     else:  # Unknown key
         msg = inliner.reporter.error(
             '[sphinxmapxrefrole] - Failed to find mapping for {}'.format(text),
             line=lineno)
-        prb = inliner.problematic(rawtext, rawtext, msg)
+        prb = inliner.problematic(text, rawtext, msg)
         return [prb], [msg]
 
 
